@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Register</title>
+	<!-- Bootstrap CSS from a CDN. -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- My own stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<header><em><h1>Register</h1></em></header>
+	<a href="index.html">Return To Main Page</a><br><br>
+	<form method="GET">
+		First Name: <input type="input" name="firstname"required><br>
+		Last Name: <input type="input" name="lastname" required><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password"  name="password" minlength="5"><br>
+		Birthday: <input type="date"  name="birthday" required><br><br>
+		Gender (select one): <br>
+		<input type="radio" name="gender" value="Male" required>Male <br>
+		<input type="radio" name="gender" value="Female" required>Female <br>
+		<input type="radio" name="gender" value="Trans" required>Trans <br>
+		<input type="radio" name="gender" value="noncomforming"required>non-comforming <br>
+		<input type="radio" name="gender" value="Other" required>Other <br><br>
+		Interests (select multiple): <br>
+		<input type="checkbox" name="music">Music <br>
+		<input type="checkbox" name="books">Books <br>
+		<input type="checkbox" name="movies">Movies <br><br> 
+		Goal (select one):<br>
+		<select name="goal">
+			<option value="Financial" name="financial">Financial</option>
+			<option value="Spiritual" name="spiritual">Spiritual</option>
+			<option value="Social" name="social">Social</option>
+			<option value="Romantic" name="romantic">Romantic</option>
+			<option value="Recreational" name="recreational">Recreational</option>
+		</select><br><br>
+		<input type="submit" value="Register">
+		<input type="reset">
+	</form>
+</body>
+</html> 
